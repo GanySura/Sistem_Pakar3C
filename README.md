@@ -13,11 +13,13 @@ def bfs(graf, mulai, tujuan):
         visited = set()
 
 while queue:     
-        #masukkan antrian paling depan ke variabel jalur
-        jalur = queue.pop(0)
+              
+     
+         #masukkan antrian paling depan ke variabel jalur
+         jalur = queue.pop(0)
         
-        #simpan node yang dipilih ke variabel state, misal jalur = C,B maka simpan B ke variabel state
-        state = jalur[-1]
+           #simpan node yang dipilih ke variabel state, misal jalur = C,B maka simpan B ke variabel state
+          state = jalur[-1]
 
 
 Sedangkan pada pada dfs 
@@ -28,7 +30,9 @@ def dfs(graf, mulai, tujuan):
     visited = set()
     
  while stack:     
-        # masukkan antrian paling depan ke variabel jalur
+       
+        
+         # masukkan antrian paling depan ke variabel jalur
         jalur = stack.pop(-1)
         
         # simpan node yang dipilih ke variabel state, misal jalur = C,B maka simpan B ke variabel state
