@@ -97,9 +97,11 @@ sebagai contoh pada codingan berikut untuk mengecek dimana keluarga pada data ya
         cbcb2 = defuzzifikasi(cbcb1)
 
 14. melakukan pengecekan skor
+        
         if cbcb2 > 30:
             tebakan.append([a[0], cbcb2])
 
 15. melakukan sortir dan menyisakan 20 keluarga terlayak
-      tebakan.sort(key=lambda z:int(z[1]), reverse=True)
-      tebakan = tebakan[:20]
+
+        tebakan.sort(key=lambda z:int(z[1]), reverse=True)
+        tebakan = tebakan[:20]
